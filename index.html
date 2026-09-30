@@ -6,7 +6,6 @@
   <meta name="description" content="LUMO — дизайнерские светильники для дома: каталог, преимущества мастерской и популярные модели.">
   <title>LUMO — дизайнерский свет для дома</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main-content">Перейти к содержанию</a>
@@ -25,7 +24,7 @@
           <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <button class="button button--small" type="button" data-dialog-open>Подобрать свет</button>
+      <a class="button button--small" href="#consultation-dialog">Подобрать свет</a>
     </div>
   </header>
 
@@ -140,20 +139,23 @@
       <div><h2 class="site-footer__title">Контакты</h2><address class="site-footer__links"><a href="tel:+78432024040">+7 843 202-40-40</a><a href="mailto:hello@lumo.example">hello@lumo.example</a><span>Казань, ул. Профсоюзная, 18</span></address></div>
       <div><h2 class="site-footer__title">Режим работы</h2><p>Пн–Сб, 10:00–20:00<br>Вс, 11:00–18:00</p></div>
     </div>
-    <div class="site-footer__bottom container"><span>© <span data-year>2026</span> LUMO</span><span>Учебный проект · КР №1</span></div>
+    <div class="site-footer__bottom container"><span>© 2026 LUMO</span><span>Учебный проект · КР №1</span></div>
   </footer>
 
   <a class="back-to-top" href="#top" aria-label="Вернуться наверх">↑</a>
-  <dialog class="modal" id="consultation-dialog" aria-labelledby="dialog-title">
-    <button class="modal__close" type="button" data-dialog-close aria-label="Закрыть окно">×</button>
-    <p class="eyebrow">Бесплатная консультация</p><h2 class="modal__title" id="dialog-title">Подберём свет под вашу задачу</h2>
-    <p class="modal__text">Оставьте контакты — дизайнер свяжется с вами в рабочее время.</p>
-    <form class="mini-form" data-demo-form>
-      <label class="form-field" for="modal-name"><span>Ваше имя</span><input id="modal-name" type="text" name="name" autocomplete="name" required></label>
-      <label class="form-field" for="modal-phone"><span>Телефон</span><input id="modal-phone" type="tel" name="phone" autocomplete="tel" placeholder="+7 999 000-00-00" required></label>
-      <label class="checkbox" for="modal-consent"><input id="modal-consent" type="checkbox" name="consent" required><span>Согласен на обработку персональных данных</span></label>
-      <button class="button button--full" type="submit">Заказать звонок</button><p class="form-status" role="status" aria-live="polite"></p>
-    </form>
-  </dialog>
+  <section class="modal" id="consultation-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+    <div class="modal__content">
+      <a class="modal__close" href="#" aria-label="Закрыть окно">×</a>
+      <p class="eyebrow">Бесплатная консультация</p>
+      <h2 class="modal__title" id="dialog-title">Подберём свет под вашу задачу</h2>
+      <p class="modal__text">Заполните небольшую форму, и мы свяжемся с вами.</p>
+      <form class="mini-form" action="#" method="get">
+        <label class="form-field" for="modal-name"><span>Ваше имя</span><input id="modal-name" type="text" name="name" autocomplete="name" required></label>
+        <label class="form-field" for="modal-phone"><span>Телефон</span><input id="modal-phone" type="tel" name="phone" autocomplete="tel" placeholder="+7 999 000-00-00" required></label>
+        <label class="checkbox" for="modal-consent"><input id="modal-consent" type="checkbox" name="consent" required><span>Согласен на обработку персональных данных</span></label>
+        <button class="button button--full" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>

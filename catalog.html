@@ -6,14 +6,13 @@
   <meta name="description" content="Каталог дизайнерских подвесных, настольных и напольных светильников LUMO.">
   <title>Каталог светильников — LUMO</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main-content">Перейти к содержанию</a>
   <header class="site-header"><div class="site-header__inner container">
     <a class="logo" href="index.html" aria-label="LUMO — на главную"><img class="logo__mark" src="images/logo.svg" alt="" width="38" height="38"><span class="logo__text">LUMO</span></a>
     <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li><a class="site-nav__link" href="index.html">Главная</a></li><li><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li><li><a class="site-nav__link" href="product.html">Товар</a></li><li><a class="site-nav__link" href="order.html">Заказ</a></li><li><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
-    <button class="button button--small" type="button" data-dialog-open>Подобрать свет</button>
+    <a class="button button--small" href="index.html#consultation-dialog">Подобрать свет</a>
   </div></header>
 
   <main id="main-content">
@@ -42,8 +41,7 @@
     </div></section>
   </main>
 
-  <footer class="site-footer"><div class="site-footer__inner container"><div><a class="logo logo--light" href="index.html"><img class="logo__mark" src="images/logo.svg" alt="" width="38" height="38"><span class="logo__text">LUMO</span></a><p class="site-footer__tagline">Свет, который хочется оставить включённым.</p></div><div><h2 class="site-footer__title">Навигация</h2><ul class="site-footer__links"><li><a href="catalog.html">Каталог</a></li><li><a href="index.html#advantages">Преимущества</a></li><li><a href="order.html">Оформить заказ</a></li></ul></div><div><h2 class="site-footer__title">Контакты</h2><address class="site-footer__links"><a href="tel:+78432024040">+7 843 202-40-40</a><a href="mailto:hello@lumo.example">hello@lumo.example</a><span>Казань, ул. Профсоюзная, 18</span></address></div><div><h2 class="site-footer__title">Режим работы</h2><p>Пн–Сб, 10:00–20:00<br>Вс, 11:00–18:00</p></div></div><div class="site-footer__bottom container"><span>© <span data-year>2026</span> LUMO</span><span>Учебный проект · КР №1</span></div></footer>
+  <footer class="site-footer"><div class="site-footer__inner container"><div><a class="logo logo--light" href="index.html"><img class="logo__mark" src="images/logo.svg" alt="" width="38" height="38"><span class="logo__text">LUMO</span></a><p class="site-footer__tagline">Свет, который хочется оставить включённым.</p></div><div><h2 class="site-footer__title">Навигация</h2><ul class="site-footer__links"><li><a href="catalog.html">Каталог</a></li><li><a href="index.html#advantages">Преимущества</a></li><li><a href="order.html">Оформить заказ</a></li></ul></div><div><h2 class="site-footer__title">Контакты</h2><address class="site-footer__links"><a href="tel:+78432024040">+7 843 202-40-40</a><a href="mailto:hello@lumo.example">hello@lumo.example</a><span>Казань, ул. Профсоюзная, 18</span></address></div><div><h2 class="site-footer__title">Режим работы</h2><p>Пн–Сб, 10:00–20:00<br>Вс, 11:00–18:00</p></div></div><div class="site-footer__bottom container"><span>© 2026 LUMO</span><span>Учебный проект · КР №1</span></div></footer>
   <a class="back-to-top" href="#top" aria-label="Вернуться наверх">↑</a>
-  <dialog class="modal" id="consultation-dialog" aria-labelledby="dialog-title"><button class="modal__close" type="button" data-dialog-close aria-label="Закрыть окно">×</button><p class="eyebrow">Бесплатная консультация</p><h2 class="modal__title" id="dialog-title">Подберём свет под вашу задачу</h2><p class="modal__text">Оставьте контакты — дизайнер свяжется с вами в рабочее время.</p><form class="mini-form" data-demo-form><label class="form-field" for="modal-name"><span>Ваше имя</span><input id="modal-name" type="text" name="name" autocomplete="name" required></label><label class="form-field" for="modal-phone"><span>Телефон</span><input id="modal-phone" type="tel" name="phone" autocomplete="tel" required></label><label class="checkbox" for="modal-consent"><input id="modal-consent" type="checkbox" name="consent" required><span>Согласен на обработку персональных данных</span></label><button class="button button--full" type="submit">Заказать звонок</button><p class="form-status" role="status" aria-live="polite"></p></form></dialog>
 </body>
 </html>
