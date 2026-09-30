@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Светильник Flora">
+  <defs><radialGradient id="f"><stop offset="0" stop-color="#fff0bf"/><stop offset="1" stop-color="#f1bd62" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="300" cy="360" r="175" fill="url(#f)" opacity=".55"/><path d="M297 0h6v210h-6z" fill="#315d4c"/>
+  <path d="M300 190c-90 32-144 105-119 178 16 48 62 73 119 85 57-12 103-37 119-85 25-73-29-146-119-178z" fill="#d9d0b8" opacity=".78"/>
+  <path d="M300 200c-45 55-55 139 0 243M300 200c45 55 55 139 0 243M300 200c-92 72-67 189 0 243M300 200c92 72 67 189 0 243" fill="none" stroke="#fbf2dc" stroke-width="7"/>
+  <circle cx="300" cy="354" r="29" fill="#f4c66e" opacity=".75"/>
+</svg>

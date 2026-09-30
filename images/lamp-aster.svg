@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Светильник Aster">
+  <defs><radialGradient id="g" cx="50%" cy="20%" r="65%"><stop offset="0" stop-color="#fff5cf" stop-opacity=".95"/><stop offset="1" stop-color="#eebd6a" stop-opacity="0"/></radialGradient></defs>
+  <ellipse cx="300" cy="420" rx="205" ry="130" fill="url(#g)"/>
+  <path d="M298 0h5v196h-5z" fill="#263a31"/><rect x="267" y="182" width="67" height="22" rx="11" fill="#263a31"/>
+  <path d="M164 330c15-100 67-142 136-142s121 42 136 142z" fill="#d4ad82"/><path d="M164 330h272c-17 45-72 70-136 70s-119-25-136-70z" fill="#b9885d"/>
+  <ellipse cx="300" cy="330" rx="136" ry="28" fill="#fff7e7"/><ellipse cx="300" cy="337" rx="70" ry="18" fill="#f3c36e" opacity=".55"/>
+  <path d="M244 402l-31 83h174l-31-83c-18 8-37 12-56 12s-38-4-56-12z" fill="#efb95b" opacity=".13"/>
+</svg>

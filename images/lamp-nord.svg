@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Светильник Nord">
+  <defs><radialGradient id="n"><stop offset="0" stop-color="#ffeebd"/><stop offset="1" stop-color="#efbe68" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="232" cy="282" r="145" fill="url(#n)" opacity=".52"/>
+  <ellipse cx="350" cy="534" rx="112" ry="18" fill="#2b3e36"/><path d="M350 520V160c0-42-29-70-67-70h-67" fill="none" stroke="#315d4c" stroke-width="15" stroke-linecap="round"/>
+  <path d="M130 110h145l-24 120H154z" fill="#c79e72"/><ellipse cx="202" cy="230" rx="49" ry="13" fill="#fff4db"/>
+  <circle cx="202" cy="218" r="22" fill="#f3c46f" opacity=".65"/>
+</svg>

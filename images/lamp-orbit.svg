@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Светильник Orbit">
+  <defs><radialGradient id="o" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffe8a8"/><stop offset="1" stop-color="#efb75f" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="310" cy="290" r="165" fill="url(#o)" opacity=".55"/>
+  <ellipse cx="300" cy="498" rx="125" ry="22" fill="#23372f"/><rect x="292" y="288" width="16" height="210" rx="8" fill="#315d4c"/>
+  <path d="M300 298l-93-55" stroke="#315d4c" stroke-width="13" stroke-linecap="round"/><circle cx="205" cy="242" r="17" fill="#23372f"/>
+  <path d="M103 178c31-55 101-75 156-44l-72 126z" fill="#486d5e"/><ellipse cx="147" cy="221" rx="73" ry="18" transform="rotate(-60 147 221)" fill="#f6dfb0"/>
+</svg>

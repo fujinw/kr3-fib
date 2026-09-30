@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Светильник Wave">
+  <defs><linearGradient id="w" x1="0" x2="1"><stop stop-color="#ffe6a6" stop-opacity="0"/><stop offset=".5" stop-color="#f8ce7b"/><stop offset="1" stop-color="#ffe6a6" stop-opacity="0"/></linearGradient></defs>
+  <path d="M150 0v235M450 0v235" stroke="#2b3e36" stroke-width="6"/>
+  <path d="M92 260c67-70 126 70 193 0s126 70 223 0" fill="none" stroke="#315d4c" stroke-width="26" stroke-linecap="round"/>
+  <path d="M70 276h460v190H70z" fill="url(#w)" opacity=".28"/>
+  <path d="M105 279c62-42 115 48 180-4s128 49 210-1" fill="none" stroke="#f6d085" stroke-width="8" stroke-linecap="round"/>
+</svg>

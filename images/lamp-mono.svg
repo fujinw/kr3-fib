@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Бра Mono">
+  <defs><radialGradient id="m"><stop offset="0" stop-color="#ffe9ac"/><stop offset="1" stop-color="#efbd65" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="330" cy="300" r="180" fill="url(#m)" opacity=".5"/>
+  <rect x="160" y="157" width="30" height="286" rx="15" fill="#2b3e36"/><circle cx="175" cy="300" r="48" fill="#315d4c"/>
+  <path d="M175 300h85" stroke="#315d4c" stroke-width="18" stroke-linecap="round"/><path d="M250 217c75 10 126 39 150 83-24 44-75 73-150 83z" fill="#b5845d"/><ellipse cx="255" cy="300" rx="22" ry="83" fill="#ead2b5"/>
+</svg>
