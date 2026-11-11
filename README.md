@@ -27,7 +27,7 @@ kr3-responsive-shop/
 │   ├── style.css
 │   └── responsive.css
 ├── images/          Исходные SVG и варианты WebP
-└── lighthouse/      HTML-отчёты по пяти страницам
+└── lighthouse/      Скриншоты Lighthouse
 ```
 
 ## Адаптивная вёрстка
@@ -50,15 +50,13 @@ kr3-responsive-shop/
 
 В Chromium проверены все пять страниц на ширинах 320, 360, 430, 640, 768, 1024 и 1440 px. Горизонтальной прокрутки страницы нет, в том числе при раскрытых меню и фильтрах. Отдельно проверены переход по ссылке пропуска, закрытие диалога через Escape, переключение доставки стрелками, сброс фильтров и валидация заявки.
 
-Lighthouse 13.6.0, категория Accessibility, мобильный режим. Автоматические проверки дополняют проверку клавиатурой.
+Скриншоты Lighthouse сделаны на [опубликованном сайте](https://fujinw.github.io/kr3-fib/).
 
-| Страница | Результат |
+| Страница | Доступность |
 | --- | --- |
-| [Главная](lighthouse/index.html) | 100/100 |
-| [Каталог](lighthouse/catalog.html) | 100/100 |
-| [Товар](lighthouse/product.html) | 100/100 |
-| [Заказ](lighthouse/order.html) | 100/100 |
-| [Контакты](lighthouse/contacts.html) | 100/100 |
+| [Главная](lighthouse/index.png) | 100/100 |
+| [Каталог](lighthouse/catalog.png) | 100/100 |
+| [Заказ](lighthouse/order.png) | 100/100 |
 
 ## Автор
 
