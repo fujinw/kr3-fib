@@ -6,16 +6,14 @@
   <meta name="description" content="LUMO — дизайнерские светильники для дома: каталог, преимущества мастерской и популярные модели.">
   <title>LUMO — дизайнерский свет для дома</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body id="top">
   <a class="skip-link" href="#main-content">Перейти к содержанию</a>
   <header class="site-header">
     <div class="site-header__inner container">
-      <a class="logo" href="index.html" aria-label="LUMO — на главную">
-        <img class="logo__mark" src="images/logo.svg" alt="" width="38" height="38">
-        <span class="logo__text">LUMO</span>
-      </a>
-      <nav class="site-nav" aria-label="Основная навигация">
+      <a class="logo" href="index.html" aria-label="LUMO — на главную"> <img class="logo__mark" src="images/logo.svg" alt="" width="38" height="38"> <span class="logo__text">LUMO</span> </a>
+      <nav class="site-nav site-nav--desktop" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
           <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
@@ -24,11 +22,23 @@
           <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <a class="button button--small" href="#consultation-dialog">Подобрать свет</a>
+      <button class="button button--small" type="button" commandfor="consultation-dialog" command="show-modal">Подобрать свет</button>
+      <details class="mobile-menu">
+        <summary>Меню</summary>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
+            <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+            <li><a class="site-nav__link" href="product.html">Товар</a></li>
+            <li><a class="site-nav__link" href="order.html">Заказ</a></li>
+            <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </details>
     </div>
   </header>
 
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
     <section class="hero">
       <div class="hero__inner container">
         <div class="hero__content">
@@ -45,9 +55,12 @@
             <div><dt>4,9</dt><dd>средняя оценка</dd></div>
           </dl>
         </div>
-        <div class="hero__visual" aria-label="Подвесной светильник Aster в интерьере">
+        <div class="hero__visual">
           <div class="hero__glow"></div>
-          <img class="hero__lamp" src="images/lamp-aster.svg" alt="Подвесной светильник Aster песочного цвета" width="560" height="560">
+          <img class="hero__lamp" src="images/lamp-aster.svg"
+               srcset="images/lamp-aster-320.webp 320w, images/lamp-aster-640.webp 640w, images/lamp-aster-960.webp 960w"
+               sizes="(min-width: 1220px) 470px, (min-width: 1024px) 41vw, (min-width: 768px) 43vw, min(100vw - 24px, 340px)"
+               alt="Подвесной светильник Aster песочного цвета" width="600" height="600">
           <span class="hero__note hero__note--material">матовый металл</span>
           <span class="hero__note hero__note--light">2700 K</span>
         </div>
@@ -90,7 +103,10 @@
           <article class="product-card product-card--hit">
             <span class="product-card__badge">Хит</span>
             <a class="product-card__image-link" href="product.html">
-              <img class="product-card__image" src="images/lamp-aster.svg" alt="Подвесной светильник Aster" width="420" height="360">
+              <img class="product-card__image" src="images/lamp-aster.svg"
+                   srcset="images/lamp-aster-320.webp 320w, images/lamp-aster-640.webp 640w"
+                   sizes="(min-width: 1220px) 354px, (min-width: 1024px) calc((100vw - 80px) / 3 - 26px), (min-width: 640px) calc((100vw - 90px) / 2), calc(100vw - 50px)"
+                   alt="Подвесной светильник Aster" width="600" height="600" loading="lazy">
             </a>
             <div class="product-card__meta"><span>Подвесной</span><span>Ø 42 см</span></div>
             <h3 class="product-card__title"><a href="product.html">Aster</a></h3>
@@ -99,22 +115,28 @@
           </article>
           <article class="product-card product-card--new">
             <span class="product-card__badge">Новинка</span>
-            <a class="product-card__image-link" href="product.html">
-              <img class="product-card__image" src="images/lamp-orbit.svg" alt="Настольный светильник Orbit" width="420" height="360">
-            </a>
+            <div class="product-card__image-link">
+              <img class="product-card__image" src="images/lamp-orbit.svg"
+                   srcset="images/lamp-orbit-320.webp 320w, images/lamp-orbit-640.webp 640w"
+                   sizes="(min-width: 1220px) 354px, (min-width: 1024px) calc((100vw - 80px) / 3 - 26px), (min-width: 640px) calc((100vw - 90px) / 2), calc(100vw - 50px)"
+                   alt="Настольный светильник Orbit" width="600" height="600" loading="lazy">
+            </div>
             <div class="product-card__meta"><span>Настольный</span><span>32 см</span></div>
-            <h3 class="product-card__title"><a href="product.html">Orbit</a></h3>
+            <h3 class="product-card__title">Orbit</h3>
             <p class="product-card__description">Поворотный плафон и отражённый вечерний свет.</p>
-            <div class="product-card__footer"><strong class="product-card__price">9 800 ₽</strong><a class="icon-button" href="product.html" aria-label="Подробнее о светильнике Orbit">↗</a></div>
+            <div class="product-card__footer"><strong class="product-card__price">9 800 ₽</strong></div>
           </article>
           <article class="product-card">
-            <a class="product-card__image-link" href="product.html">
-              <img class="product-card__image" src="images/lamp-nord.svg" alt="Напольный светильник Nord" width="420" height="360">
-            </a>
+            <div class="product-card__image-link">
+              <img class="product-card__image" src="images/lamp-nord.svg"
+                   srcset="images/lamp-nord-320.webp 320w, images/lamp-nord-640.webp 640w"
+                   sizes="(min-width: 1220px) 354px, (min-width: 1024px) calc((100vw - 80px) / 3 - 26px), (min-width: 640px) calc((100vw - 90px) / 2), calc(100vw - 50px)"
+                   alt="Напольный светильник Nord" width="600" height="600" loading="lazy">
+            </div>
             <div class="product-card__meta"><span>Напольный</span><span>148 см</span></div>
-            <h3 class="product-card__title"><a href="product.html">Nord</a></h3>
+            <h3 class="product-card__title">Nord</h3>
             <p class="product-card__description">Лаконичный торшер для чтения и спокойных вечеров.</p>
-            <div class="product-card__footer"><strong class="product-card__price">18 400 ₽</strong><a class="icon-button" href="product.html" aria-label="Подробнее о светильнике Nord">↗</a></div>
+            <div class="product-card__footer"><strong class="product-card__price">18 400 ₽</strong></div>
           </article>
         </div>
       </div>
@@ -139,23 +161,23 @@
       <div><h2 class="site-footer__title">Контакты</h2><address class="site-footer__links"><a href="tel:+78432024040">+7 843 202-40-40</a><a href="mailto:hello@lumo.example">hello@lumo.example</a><span>Казань, ул. Профсоюзная, 18</span></address></div>
       <div><h2 class="site-footer__title">Режим работы</h2><p>Пн–Сб, 10:00–20:00<br>Вс, 11:00–18:00</p></div>
     </div>
-    <div class="site-footer__bottom container"><span>© 2026 LUMO</span><span>Учебный проект · КР №1</span></div>
+    <div class="site-footer__bottom container"><span>© 2026 LUMO</span><span>Учебный проект · КР №3</span>
+      <a class="back-to-top" href="#top">Наверх ↑</a>
+    </div>
   </footer>
-
-  <a class="back-to-top" href="#top" aria-label="Вернуться наверх">↑</a>
-  <section class="modal" id="consultation-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+  <dialog class="modal" id="consultation-dialog" aria-labelledby="dialog-title">
     <div class="modal__content">
-      <a class="modal__close" href="#" aria-label="Закрыть окно">×</a>
+      <button class="modal__close" type="button" commandfor="consultation-dialog" command="close" aria-label="Закрыть окно">×</button>
       <p class="eyebrow">Бесплатная консультация</p>
       <h2 class="modal__title" id="dialog-title">Подберём свет под вашу задачу</h2>
-      <p class="modal__text">Заполните небольшую форму, и мы свяжемся с вами.</p>
-      <form class="mini-form" action="#" method="get">
-        <label class="form-field" for="modal-name"><span>Ваше имя</span><input id="modal-name" type="text" name="name" autocomplete="name" required></label>
+      <p class="modal__text">Учебная форма. Данные остаются в браузере.</p>
+      <form class="mini-form" method="dialog">
+        <label class="form-field" for="modal-name"><span>Ваше имя</span><input id="modal-name" type="text" autofocus name="name" autocomplete="name" required></label>
         <label class="form-field" for="modal-phone"><span>Телефон</span><input id="modal-phone" type="tel" name="phone" autocomplete="tel" placeholder="+7 999 000-00-00" required></label>
         <label class="checkbox" for="modal-consent"><input id="modal-consent" type="checkbox" name="consent" required><span>Согласен на обработку персональных данных</span></label>
         <button class="button button--full" type="submit">Отправить</button>
       </form>
     </div>
-  </section>
+  </dialog>
 </body>
 </html>

@@ -6,30 +6,59 @@
   <meta name="description" content="Подвесной светильник Aster от LUMO: описание, характеристики, комплектация и заказ.">
   <title>Светильник Aster — LUMO</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body id="top">
   <a class="skip-link" href="#main-content">Перейти к содержанию</a>
-  <header class="site-header"><div class="site-header__inner container">
-    <a class="logo" href="index.html" aria-label="LUMO — на главную"><img class="logo__mark" src="images/logo.svg" alt="" width="38" height="38"><span class="logo__text">LUMO</span></a>
-    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li><a class="site-nav__link" href="index.html">Главная</a></li><li><a class="site-nav__link" href="catalog.html">Каталог</a></li><li><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li><li><a class="site-nav__link" href="order.html">Заказ</a></li><li><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
-    <a class="button button--small" href="index.html#consultation-dialog">Подобрать свет</a>
-  </div></header>
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="logo" href="index.html" aria-label="LUMO — на главную"><img class="logo__mark" src="images/logo.svg" alt="" width="38" height="38"><span class="logo__text">LUMO</span></a>
+      <nav class="site-nav site-nav--desktop" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li>
+          <li><a class="site-nav__link" href="order.html">Заказ</a></li>
+          <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="button button--small" href="contacts.html#feedback">Подобрать свет</a>
+      <details class="mobile-menu">
+        <summary>Меню</summary>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html">Главная</a></li>
+            <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+            <li><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li>
+            <li><a class="site-nav__link" href="order.html">Заказ</a></li>
+            <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </header>
 
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
     <div class="container"><nav class="breadcrumbs breadcrumbs--page" aria-label="Хлебные крошки"><ol><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Каталог</a></li><li aria-current="page">Aster</li></ol></nav></div>
     <article class="product-detail container">
       <div class="product-gallery">
         <span class="product-gallery__badge">Хит</span>
-        <img class="product-gallery__image" src="images/lamp-aster.svg" alt="Подвесной светильник Aster песочного цвета, вид спереди" width="720" height="620">
+        <picture class="product-gallery__picture">
+          <source type="image/webp"
+                  srcset="images/lamp-aster-320.webp 320w, images/lamp-aster-640.webp 640w, images/lamp-aster-960.webp 960w"
+                  sizes="(min-width: 1220px) 545px, (min-width: 1024px) 46vw, (min-width: 768px) 45vw, calc(100vw - 56px)">
+          <img class="product-gallery__image" src="images/lamp-aster.svg"
+               alt="Подвесной светильник Aster песочного цвета, вид спереди" width="600" height="600">
+        </picture>
         <ul class="product-gallery__notes" aria-label="Ключевые особенности"><li>Ручная сборка</li><li>Лампа в комплекте</li><li>Гарантия 5 лет</li></ul>
       </div>
       <div class="product-info">
         <p class="eyebrow">Подвесной светильник · арт. AST-42-S</p>
         <h1 class="product-info__title">Aster</h1>
         <p class="product-info__lead">Спокойная геометрия и направленный свет — для обеденного стола, кухонного острова или камерной зоны отдыха.</p>
-        <div class="rating" aria-label="Рейтинг 4,9 из 5"><span aria-hidden="true">★★★★★</span><a href="#reviews">4,9 · 18 отзывов</a></div>
-        <div class="product-info__choice"><span class="product-info__label">Цвет: песочный</span><div class="swatches" aria-label="Доступные цвета"><button class="swatch swatch--sand swatch--active" type="button" aria-label="Песочный" aria-pressed="true"></button><button class="swatch swatch--black" type="button" aria-label="Графитовый" aria-pressed="false"></button><button class="swatch swatch--green" type="button" aria-label="Оливковый" aria-pressed="false"></button><button class="swatch swatch--white" type="button" aria-label="Молочный" aria-pressed="false"></button></div></div>
-        <div class="product-info__buy"><div><strong class="product-info__price">14 900 ₽</strong><span class="product-info__availability">В наличии · отправим завтра</span></div><a class="button" href="order.html?product=aster">Оформить заказ</a></div>
+        <div class="rating"><span aria-hidden="true">★★★★★</span><a href="#reviews">4,9 из 5 · 18 отзывов</a></div>
+        <div class="product-info__choice"><span class="product-info__label">Цвет: песочный</span><ul class="swatches" aria-label="Доступные цвета"><li><span class="swatch swatch--sand swatch--active" aria-hidden="true"></span><span class="visually-hidden">Песочный</span></li><li><span class="swatch swatch--black" aria-hidden="true"></span><span class="visually-hidden">Графитовый</span></li><li><span class="swatch swatch--green" aria-hidden="true"></span><span class="visually-hidden">Оливковый</span></li><li><span class="swatch swatch--white" aria-hidden="true"></span><span class="visually-hidden">Молочный</span></li></ul></div>
+        <div class="product-info__buy"><div><strong class="product-info__price">14 900 ₽</strong><span class="product-info__availability">В наличии · отправим завтра</span></div><a class="button" href="order.html">Оформить заказ</a></div>
         <ul class="product-info__delivery"><li><span aria-hidden="true">◇</span><div><strong>Бесплатная доставка</strong><small>по России от 15 000 ₽</small></div></li><li><span aria-hidden="true">↺</span><div><strong>30 дней на возврат</strong><small>если светильник не подошёл</small></div></li></ul>
       </div>
     </article>
@@ -42,13 +71,31 @@
 
     <section class="section section--tint"><div class="container specs-layout">
       <div><p class="eyebrow">Все параметры</p><h2 class="section-heading__title">Характеристики</h2><p>Конструкция рассчитана на стандартную сеть 220 В и не требует специального монтажа.</p></div>
-      <div class="table-wrap"><table class="specs-table"><caption>Технические характеристики светильника Aster</caption><thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr></thead><tbody><tr><th scope="row">Материал</th><td>Сталь с порошковой окраской</td></tr><tr><th scope="row">Размер плафона</th><td>Ø 42 × 18 см</td></tr><tr><th scope="row">Длина кабеля</th><td>До 200 см, регулируется</td></tr><tr><th scope="row">Источник света</th><td>LED E27, 9 Вт, 2700 K</td></tr><tr><th scope="row">Световой поток</th><td>806 лм</td></tr><tr><th scope="row">Вес</th><td>2,1 кг</td></tr><tr><th scope="row">Гарантия</th><td>5 лет</td></tr></tbody></table></div>
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="specs-caption">
+        <table class="specs-table">
+          <caption id="specs-caption">Технические характеристики светильника Aster</caption>
+          <thead>
+            <tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Материал</th><td>Сталь с порошковой окраской</td></tr>
+            <tr><th scope="row">Размер плафона</th><td>Ø 42 × 18 см</td></tr>
+            <tr><th scope="row">Длина кабеля</th><td>До 200 см, регулируется</td></tr>
+            <tr><th scope="row">Источник света</th><td>LED E27, 9 Вт, 2700 K</td></tr>
+            <tr><th scope="row">Световой поток</th><td>806 лм</td></tr>
+            <tr><th scope="row">Вес</th><td>2,1 кг</td></tr>
+            <tr><th scope="row">Гарантия</th><td>5 лет</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div></section>
 
-    <section class="section" id="reviews"><div class="container"><div class="section-heading section-heading--inline"><div><p class="eyebrow">Проверенные покупки</p><h2 class="section-heading__title">Отзывы</h2></div><a class="button button--secondary" href="index.html#consultation-dialog">Задать вопрос</a></div><div class="reviews"><article class="review"><div class="review__header"><strong>Анна К.</strong><span>12 августа 2026</span></div><div class="rating" aria-label="5 из 5"><span aria-hidden="true">★★★★★</span></div><p>Повесили два светильника над островом. Цвет точь-в-точь как на образце, свет мягкий и действительно не бьёт в глаза.</p></article><article class="review"><div class="review__header"><strong>Илья М.</strong><span>3 июля 2026</span></div><div class="rating" aria-label="5 из 5"><span aria-hidden="true">★★★★★</span></div><p>Порадовала упаковка и понятная инструкция. Кабель легко укоротили при монтаже. Выглядит заметно дороже своей цены.</p></article></div></div></section>
+    <section class="section" id="reviews"><div class="container"><div class="section-heading section-heading--inline"><div><p class="eyebrow">Проверенные покупки</p><h2 class="section-heading__title">Отзывы</h2></div><a class="button button--secondary" href="contacts.html#feedback">Задать вопрос</a></div><div class="reviews"><article class="review"><div class="review__header"><strong>Анна К.</strong><span>12 августа 2026</span></div><div class="rating"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">5 из 5</span></div><p>Повесили два светильника над островом. Цвет точь-в-точь как на образце, свет мягкий и действительно не бьёт в глаза.</p></article><article class="review"><div class="review__header"><strong>Илья М.</strong><span>3 июля 2026</span></div><div class="rating"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">5 из 5</span></div><p>Порадовала упаковка и понятная инструкция. Кабель легко укоротили при монтаже. Выглядит заметно дороже своей цены.</p></article></div></div></section>
   </main>
 
-  <footer class="site-footer"><div class="site-footer__inner container"><div><a class="logo logo--light" href="index.html"><img class="logo__mark" src="images/logo.svg" alt="" width="38" height="38"><span class="logo__text">LUMO</span></a><p class="site-footer__tagline">Свет, который хочется оставить включённым.</p></div><div><h2 class="site-footer__title">Навигация</h2><ul class="site-footer__links"><li><a href="catalog.html">Каталог</a></li><li><a href="index.html#advantages">Преимущества</a></li><li><a href="order.html">Оформить заказ</a></li></ul></div><div><h2 class="site-footer__title">Контакты</h2><address class="site-footer__links"><a href="tel:+78432024040">+7 843 202-40-40</a><a href="mailto:hello@lumo.example">hello@lumo.example</a><span>Казань, ул. Профсоюзная, 18</span></address></div><div><h2 class="site-footer__title">Режим работы</h2><p>Пн–Сб, 10:00–20:00<br>Вс, 11:00–18:00</p></div></div><div class="site-footer__bottom container"><span>© 2026 LUMO</span><span>Учебный проект · КР №1</span></div></footer>
-  <a class="back-to-top" href="#top" aria-label="Вернуться наверх">↑</a>
+  <footer class="site-footer"><div class="site-footer__inner container"><div><a class="logo logo--light" href="index.html"><img class="logo__mark" src="images/logo.svg" alt="" width="38" height="38"><span class="logo__text">LUMO</span></a><p class="site-footer__tagline">Свет, который хочется оставить включённым.</p></div><div><h2 class="site-footer__title">Навигация</h2><ul class="site-footer__links"><li><a href="catalog.html">Каталог</a></li><li><a href="index.html#advantages">Преимущества</a></li><li><a href="order.html">Оформить заказ</a></li></ul></div><div><h2 class="site-footer__title">Контакты</h2><address class="site-footer__links"><a href="tel:+78432024040">+7 843 202-40-40</a><a href="mailto:hello@lumo.example">hello@lumo.example</a><span>Казань, ул. Профсоюзная, 18</span></address></div><div><h2 class="site-footer__title">Режим работы</h2><p>Пн–Сб, 10:00–20:00<br>Вс, 11:00–18:00</p></div></div><div class="site-footer__bottom container"><span>© 2026 LUMO</span><span>Учебный проект · КР №3</span>
+      <a class="back-to-top" href="#top">Наверх ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
